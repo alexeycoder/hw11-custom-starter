@@ -18,7 +18,9 @@
 	<name>hw9-cloud-multimodule</name>
 
 	<modules>
+		<module>library-common-api</module>
 		<module>book-service</module>
+		<module>reader-service</module>
 		<module>issue-service</module>
 		<module>discovery-service</module>
 	</modules>
@@ -47,20 +49,5 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	
 </project>
