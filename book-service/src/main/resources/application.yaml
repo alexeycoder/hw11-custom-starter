@@ -1,0 +1,17 @@
+server:
+  port: 8180
+spring:
+  application:
+    name: book-service
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+#    registry-fetch-interval-seconds: 30
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  level:
+    '[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]': error

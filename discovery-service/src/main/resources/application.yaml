@@ -1,0 +1,16 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  server:
+    wait-time-in-ms-when-sync-empty: 5
+    renewal-percent-threshold: 0.85
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+logging:
+  level:
+    root: info
+    '[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]': error
