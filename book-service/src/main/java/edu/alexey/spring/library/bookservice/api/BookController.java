@@ -5,6 +5,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Stream;
 
+import org.someother.executiontimer.annotations.Timer;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import edu.alexey.spring.library.entities.Book;
 
 @RestController
 @RequestMapping("/api/books")
+@Timer
 public class BookController {
 
 	private final List<Book> books;

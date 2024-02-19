@@ -23,6 +23,7 @@
 		<module>reader-service</module>
 		<module>issue-service</module>
 		<module>discovery-service</module>
+		<module>execution-timer-starter</module>
 	</modules>
 
 	<properties>

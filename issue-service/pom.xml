@@ -14,6 +14,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.someother</groupId>
+			<artifactId>execution-timer-starter</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
 			<groupId>edu.alexey.spring</groupId>
 			<artifactId>library-common-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
